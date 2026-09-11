@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Buena Mesa</title>
+</head>
+<body>
+
+    <header>
+        <h1>La Buena Mesa</h1>
+        <p>Sabores de siempre, con el cariño de casa</p>
+
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#reserva">Reservas</a></li>
+                <li><a href="#ubicacion">¿Como llegar?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Nuestro menu</h2>
+
+            <h3>Locro casero</h3>
+            <p>Guiso tradicional con maiz, zapallo y carne, cocido a fuego lento.</p>
+
+            <h3>Sorrentinos de jamon y queso</h3>
+            <p>Pasta rellena acompañada de salsa fileto y albahaca fresca.</p>
+
+            <h3>Tarta de verduras</h3>
+            <p>Masa casera rellena de acelga, cebolla y queso.</p>
+        </section>
+
+        <hr>
+
+        <section id="nosotros">
+            <h2>Quienes somos</h2>
+            <p>La Buena Mesa abrió sus puertas hace más de una década, cuando decidimos convertir las recetas de nuestra abuela en un lugar de encuentro para el barrio. Desde entonces cocinamos todos los días pensando en ofrecer comida honesta y un trato cercano.</p>
+        </section>
+
+        <hr>
+
+        <section id="reserva">
+            <h2>Reserva tu mesa</h2>
+
+            <fieldset>
+                <legend>Datos de la reserva:</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                <br><br>
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo">
+                <br><br>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+                <br><br>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <br><br>
+
+                <label for="personas">Cantidad de personas:</label>
+                <input type="number" id="personas" name="personas" placeholder="Ingrese cuantas personas son">
+                <br><br>
+
+                <label for="comentario">Comentario adicional</label>
+                <br>
+                <textarea id="comentario" name="comentario" placeholder="Indique cualquier aclaracion sobre la reserva"></textarea>
+                <br><br>
+
+                <input type="submit" value="Reservar">
+            </fieldset>
+        </section>
+
+        <hr>
+
+        <section id="ubicacion">
+            <h2>¿Como llegar?</h2>
+            <p>Nos encontramos en Av. Corrientes 1234, Ciudad Autónoma de Buenos Aires.</p>
+
+            <div>
+                <iframe width="400" height="450" frameborder="0"
+                    src="https://www.google.com/maps?q=Av.+Corrientes+1234,+Buenos+Aires&output=embed"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
