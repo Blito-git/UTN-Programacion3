@@ -1,0 +1,76 @@
+:root {
+    --color-fondo: #eaf6fb;
+    --color-texto: #1b3a4b;
+    --color-acento: #2196f3;
+}
+
+p {
+    font-family: Georgia, serif;
+}
+
+#parrafo-id {
+    color: darkred;
+}
+
+.parrafo-class {
+    background-color: lightyellow;
+}
+
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.parrafo-espaciado {
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+.cita {
+    font-style: italic;
+    font-family: 'Courier New', monospace;
+}
+
+.tarjeta-perfil {
+    width: 250px;
+    border: 2px solid var(--color-acento);
+    padding: 15px;
+    margin: 20px 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    /* Con border-box, el padding y el borde quedan "adentro" del ancho que definí, así que la caja no crece más de ese tamaño.
+Con content-box (el que viene por defecto), el padding y el borde se suman aparte, así que la caja termina siendo más grande que el ancho que puse. */
+}
+
+.tarjeta-galeria {
+    width: 100px;
+    height: 60px;
+    border: 1px solid var(--color-acento);
+    background-color: var(--color-fondo);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.galeria-block .tarjeta-galeria {
+    display: block;
+}
+
+.galeria-inline .tarjeta-galeria {
+    display: inline;
+}
+
+.galeria-inline-block .tarjeta-galeria {
+    display: inline-block;
+}
+
+.boton-display-none {
+    display: none;
+}
+
+.boton-visibility-hidden {
+    visibility: hidden;
+}

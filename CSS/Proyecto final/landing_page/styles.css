@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #ffffff;
+    --bg-oscuro: #1a1a2e;
+    --bg-banner: #f0f4f8;
+    --color-texto: #1a1a2e;
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color-texto);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--bg-oscuro);
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+.contenedor_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__lista a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.nav__lista a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav__mobile {
+    display: none;
+}
+
+.main__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--bg-banner);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.banner__button {
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    background-color: var(--bg-oscuro);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.banner__button:hover {
+    background-color: #33334d;
+}
+
+.caracteristicas__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.caracteristicas__section h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.caracteristicas__card {
+    background-color: var(--bg-banner);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bg-oscuro);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .caracteristicas__section {
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+    }
+
+    .nav__lista {
+        display: none;
+    }
+
+    .nav__mobile {
+        display: block;
+        cursor: pointer;
+    }
+}
